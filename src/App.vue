@@ -1,5 +1,5 @@
 <script>
-// import DocumentHeader from './components/DocumentHeader.vue';
+// import DocumentHeader from './components/DocumentHeader.vue'
 import { Doc } from './models';
 
 export default {
