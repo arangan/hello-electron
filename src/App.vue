@@ -1,9 +1,36 @@
+<script>
+// import DocumentHeader from './components/DocumentHeader.vue';
+import { Doc } from './models';
+
+export default {
+  name: 'App',
+  // components: {
+  //   DocumentHeader
+  // },
+  data() {
+    return {
+      document: new Doc()
+    };
+  },
+  methods: {
+    addTable() {
+      var d = new Doc();
+      console.log(d.tmp);
+
+      console.log(JSON.stringify(this.document));
+      console.log(JSON.stringify(this.document.Header));
+      console.log(JSON.stringify(this.document.Body));
+    },
+    Add_Row() {}
+  }
+};
+</script>
+
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </div>
-  <router-view />
+  <!-- <DocumentHeader v-model="this.document.Header" /> -->
+  <button @click="console.log(symbol)">Show Log</button>
+  <hr />
+  <button @click="addTable">Add Table</button>
 </template>
 
 <style>
